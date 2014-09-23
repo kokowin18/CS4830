@@ -46,7 +46,7 @@ session_start();
 
 		$hashedPass = sha1($salt.$pass);//hash the password concat'd with the salt
 
-		$connString = "host=dbhost-pgsql.cs.missouri.edu user=kkwp4b dbname=kkwp4b password=bumPX4xf";
+		$connString = "host=dbhost-pgsql.cs.missouri.edu user=kkwp4b dbname=kkwp4b password=";
 		$conn = pg_connect($connString);//connects to host
 
 	

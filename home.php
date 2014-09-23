@@ -27,7 +27,7 @@ border-collapse:collapse;
         if($_SESSION['user'] == "")//if not logged in, shoot them to index page
         header('Location: index.php');
 
-        $connString = "host=dbhost-pgsql.cs.missouri.edu user=kkwp4b dbname=kkwp4b password=bumPX4xf";
+        $connString = "host=dbhost-pgsql.cs.missouri.edu user=kkwp4b dbname=kkwp4b password=";
         $conn = pg_connect($connString);//connects to host
 
         if (!$conn) {

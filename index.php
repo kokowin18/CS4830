@@ -16,11 +16,11 @@ session_start();
  <div class="container">
 
       <form class="form-signin" method="POST" action='index.php' role="form">
-        <h2 class="form-signin-heading">Log in</h2>
+        <h2 class="form-signin-heading"><span class="glyphicon glyphicon-user"></span> Log in</h2>
         <input type='text' value='' name='username' class="form-control" placeholder="Username"></input>
         <input type='password' value='' name='password' class="form-control" placeholder="Password"></input>
-        <button class="btn btn-lg btn-primary" name="submit" value="submit">Sign in</button>
-		<a class="btn btn-lg btn-primary" href="registration.php" role="button"> Register</a>
+        <button class="btn btn-lg btn-primary" name="submit" value="submit">Sign in <span class="glyphicon glyphicon-log-in"></span> </button>
+		<a class="btn btn-lg btn-primary" href="registration.php" role="button">Register <span class="glyphicon glyphicon-pencil"></span> </a>
       </form>
 
     </div>
@@ -43,7 +43,7 @@ session_start();
 
 		$query = "SELECT * FROM lab8.authentication;";
 
-		$connString = "host=dbhost-pgsql.cs.missouri.edu user=kkwp4b dbname=kkwp4b password=";
+		$connString = "host=dbhost-pgsql.cs.missouri.edu user=kkwp4b dbname=kkwp4b password=bumPX4xf";
         	$conn = pg_connect($connString);//connects to host
 
 	        if (!$conn) {

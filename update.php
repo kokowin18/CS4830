@@ -5,6 +5,8 @@ session_start();
 <html>
 <head>
 <title>Update Description</title>
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -52,7 +54,7 @@ session_start();
 	}
 ?>
 
-<a href="home.php">Return to Home</a>
+<a href="home.php">Return to Home <span class="glyphicon glyphicon-home"></span></a>
 </body>
 </html>
 

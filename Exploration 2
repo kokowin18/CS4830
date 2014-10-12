@@ -1,0 +1,22 @@
+#Fibonacci series
+print('Fibonacci series')
+
+def main():
+    n = int(input('Enter the number of terms : '))
+    c = 1
+    first = 0
+    second = 1
+    while c <= n:
+                if c <= 1:
+                    next_num = c
+                else:
+                    next_num = first + second
+                    first = second
+                    second = next_num
+                print(next_num)
+                c += 1
+                if n<1:
+                    print('Value must be positive and greater than 0.')
+                continue
+            
+main()
